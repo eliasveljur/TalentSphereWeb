@@ -1,0 +1,30 @@
+.wrapper {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .logo {
+  font-family: "UncialAntiqua", sans-serif;
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.wrapper .logo a {
+  color: #b2d6dd;
+  text-decoration: none;
+}
+.wrapper .status_code {
+  color: #b2d6dd;
+  font-weight: 500;
+  font-size: 294.87px;
+  text-align: center;
+  line-height: 100%;
+  margin: 30px 0;
+}
+.wrapper .oops,
+.wrapper .text {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}

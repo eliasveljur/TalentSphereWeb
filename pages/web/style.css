@@ -1,0 +1,835 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Bitter"; /* Name of the font */
+  src: url("./assets/fonts/Bitter.ttf") format("truetype"); /* Path to the TTF file */
+  font-weight: normal; /* You can specify normal, bold, etc. */
+  font-style: normal; /* You can specify normal, italic, etc. */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e444f;
+
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56.0384px;
+  line-height: 67px;
+  text-align: center;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+.sun {
+  position: absolute;
+  top: 0;
+  left: 105%;
+  transform: translate(-50%, -50%); /* Центрирование */
+  width: 1275px;
+  z-index: 2;
+}
+
+.circle_1,
+.circle_2,
+.circle_3,
+.circle_4,
+.circle_5,
+.circle_6,
+.circle_7,
+.circle_8,
+.circle_9,
+.circle_10,
+.circle_11,
+.circle_11,
+.circle_12,
+.circle_13,
+.circle_14,
+.circle_15,
+.circle_16,
+.circle_17,
+.circle_18,
+.circle_19,
+.circle_20,
+.circle_21,
+.circle_22,
+.circle_23,
+.circle_24,
+.circle_25 {
+  border-radius: 55%;
+  position: absolute;
+}
+.lines_top_right {
+  position: absolute; /* Changed from absolute to fixed */
+  right: 0;
+  top: 0;
+  width: 1277px; /* Adjust this as needed */
+  z-index: 2;
+}
+
+.pulse_anim {
+  animation: pulsate 5.5s infinite;
+}
+.circle_1 {
+  left: 319px;
+  top: 24px;
+  width: 258.67px;
+  height: 258.67px;
+}
+.inside {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрирование */
+}
+.blue_opacity {
+  background: rgba(178, 214, 221, 0.45);
+}
+.blue {
+  background: #b2d6dd;
+}
+.circle_1_inside {
+  border-radius: 55%;
+  width: 55%;
+  height: 55%;
+  position: absolute;
+}
+.yellow_opacity {
+  background: rgba(244, 206, 131, 0.5);
+}
+
+.yellow {
+  background: #f4ce83;
+}
+
+.circle_2 {
+  width: 300px;
+  height: 302.04px;
+  left: 100px;
+  top: 368px;
+}
+
+.circle_2_inside {
+  border-radius: 55%;
+  width: 65%;
+  height: 65%;
+  position: absolute;
+}
+.star_1 {
+  position: absolute;
+  left: 468px;
+  top: 633.33px;
+  width: 134.67px;
+  height: 134.67px;
+}
+.star_3 {
+  position: absolute;
+  left: 626.67px;
+  top: 1450.67px;
+  width: 106.67px;
+  height: 106.67px;
+}
+.star_4 {
+  position: absolute;
+  left: 44px;
+  top: 1814.67px;
+  width: 106.67px;
+  height: 106.67px;
+}
+.star_5 {
+  position: absolute;
+  left: 216px;
+  top: 2009.33px;
+  width: 134.67px;
+  height: 134.67px;
+}
+.star_6 {
+  position: absolute;
+  left: 1276px;
+  top: 2804px;
+  width: 134.67px;
+  height: 134.67px;
+}
+.star_7 {
+  position: absolute;
+  left: 1597.33px;
+  top: 3268px;
+  width: 134.67px;
+  height: 134.67px;
+}
+.star_8 {
+  position: absolute;
+  left: 632px;
+  top: 3754.67px;
+  width: 134.67px;
+  height: 134.67px;
+}
+.star_9 {
+  position: absolute;
+  left: 1444px;
+  top: 4118.67px;
+  width: 134.67px;
+  height: 134.67px;
+}
+#lines {
+  position: absolute;
+  top: 200px;
+  left: 850px;
+}
+.line {
+  position: absolute;
+  background-color: white;
+  transform-origin: 50% 100%;
+}
+
+/* Стили для лучей */
+.ray {
+  position: absolute;
+  background: white;
+  width: 3px; /* Width of the ray */
+  height: 200px; /* Length of the ray */
+  transform-origin: bottom; /* Rotate from the bottom */
+}
+
+/* Clip path group */
+.circle_3_border {
+  position: absolute;
+  left: 582.67px;
+  top: 418.67px;
+  width: 244.76px;
+  height: 244px;
+}
+.white_dot {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 55%;
+}
+.circle_3 {
+  width: 65%;
+  height: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_3_inside {
+  position: absolute;
+  width: 50%; /* Adjust size as needed */
+  height: 50%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle_4 {
+  width: 250px;
+  height: 250px;
+
+  left: 942.67px;
+  top: 562.67px;
+}
+.circle_4_inside {
+  border-radius: 55%;
+  width: 65%;
+  height: 65%;
+  position: absolute;
+}
+
+.circle_5 {
+  width: 266.67px;
+  height: 268.73px;
+
+  left: 1044px;
+  top: 160px;
+}
+.circle_5_inside {
+  border-radius: 55%;
+  width: 65%;
+  height: 65%;
+  position: absolute;
+}
+.circle_5_pre_inside {
+  border-radius: 55%;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+
+.circle_6 {
+  width: 401.33px;
+  height: 414.85px;
+  left: 1408px;
+  top: 356px;
+}
+.circle_6_inside {
+  border-radius: 55%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+.bg_white {
+  background-color: white; /* Color of the dot */
+}
+.center_dot {
+  width: 58.67px; /* Width of the dot */
+  height: 58.67px; /* Height of the dot */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the dot */
+}
+.surrounding_circle {
+  width: 58.67px;
+  height: 58.67px;
+  border-radius: 50%; /* Make it a circle */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust color as needed */
+  position: absolute;
+}
+.surrounding_circle_50 {
+  width: 58.67px;
+  height: 58.67px;
+  border-radius: 50%; /* Make it a circle */
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust color as needed */
+  position: absolute;
+}
+.surrounding_circle_20 {
+  width: 58.67px;
+  height: 58.67px;
+  border-radius: 50%; /* Make it a circle */
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust color as needed */
+  position: absolute;
+}
+.brand {
+  position: absolute;
+  height: 353.33px;
+  top: 738.67px;
+  left: 50.67px;
+}
+.row_dots {
+  position: absolute;
+  left: 886.95px;
+  top: 1081.61px;
+  height: 76.21px;
+  z-index: 1;
+}
+.star_2 {
+  position: absolute;
+  left: 92px;
+  top: 1082.67px;
+  width: 134.67px;
+  height: 134.67px;
+}
+
+.circle_7 {
+  width: 316px;
+  height: 316px;
+  left: 1510.67px;
+  top: 1134.66px;
+}
+.circle_7_inside {
+  position: absolute;
+  width: 70%; /* Adjust size as needed */
+  height: 70%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle_8 {
+  width: 242.66px;
+  height: 242.66px;
+  left: 1043.67px;
+  top: 1154.67px;
+}
+
+.circle_8_inside {
+  position: absolute;
+  width: 60%; /* Adjust size as needed */
+  height: 60%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_9 {
+  width: 308px;
+  height: 308px;
+  left: 92px;
+  top: 1453.33px;
+}
+
+.circle_9_inside {
+  position: absolute;
+  width: 60%; /* Adjust size as needed */
+  height: 60%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_9 .orbits {
+  position: absolute;
+  top: 50%;
+  left: 78.5%;
+  transform: translate(-50%, -50%);
+  height: 900px;
+}
+.star_around {
+  position: absolute;
+  height: 296px;
+  left: -30%;
+  top: 5%;
+  transform: translate(-30% -5%);
+}
+
+.date_container {
+  position: absolute;
+  left: 246.67px;
+  top: 1105.33px;
+  width: 682.67px;
+  height: 361.33px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.date_container span {
+  font-size: 94px;
+  z-index: 2;
+  margin-right: 50px;
+}
+.date_container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.circle_10 {
+  width: 274.36px;
+  height: 276.23px;
+
+  left: 717.33px;
+  top: 1481.34px;
+}
+.circle_10_inside {
+  border-radius: 55%;
+  width: 65%;
+  height: 65%;
+  position: absolute;
+}
+.circle_10_pre_inside {
+  border-radius: 55%;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+.circle_11_border {
+  position: absolute;
+  width: 541px;
+  height: 538px;
+  top: 1504px;
+  left: 1016px;
+}
+.circle_11 {
+  width: 242.67px;
+  height: 242.67px;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_11_inside {
+  position: absolute;
+  width: 50%; /* Adjust size as needed */
+  height: 50%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_11_border .circle_border {
+  position: absolute;
+  width: 537.09px;
+  height: 534.52px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.big_star {
+  position: absolute;
+  width: 285px;
+  height: 285.05px;
+  top: 1408.84px;
+  left: 1603.53px;
+}
+
+.circle_12_border {
+  position: absolute;
+  width: 394.35px;
+  height: 392.46px;
+  top: 1752.12px;
+  left: 1445.34px;
+}
+.circle_12 {
+  width: 316px;
+  height: 318.15px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_12_inside {
+  position: absolute;
+  width: 60%; /* Adjust size as needed */
+  height: 60%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_12_border .circle_border {
+  position: absolute;
+  width: 394.35px;
+  height: 392.46px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.star_of_circle {
+  height: 382.67px;
+  position: absolute;
+  left: 449.51px;
+  top: 1817.52px;
+}
+
+.circle_13 {
+  width: 274.36px;
+  height: 276.23px;
+
+  left: 68px;
+  top: 2197.34px;
+}
+.circle_13_inside {
+  position: absolute;
+  width: 60%; /* Adjust size as needed */
+  height: 60%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container_lines_row {
+  position: absolute;
+  left: 524px;
+  top: 1920.33px;
+}
+.container_lines_row .lines_row {
+  height: 502px;
+  width: 1337px;
+}
+.container_lines_row .street {
+  font-size: 75px;
+  height: min-content;
+}
+.circle_14 {
+  width: 192px;
+  height: 192px;
+  left: 626.67px;
+  top: 2662.67px;
+}
+
+.circle_14_inside {
+  border-radius: 55%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+
+.circle_15 {
+  width: 249.33px;
+  height: 249.33px;
+  left: 1222px;
+  top: 2512px;
+}
+
+.circle_15_inside {
+  border-radius: 55%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+}
+.circle_16 {
+  width: 274.36px;
+  height: 276.23px;
+  left: 925.33px;
+  top: 2810.67px;
+}
+.circle_16_inside {
+  border-radius: 55%;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+.circle_16 .circles_around {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 360px;
+}
+.sphera {
+  position: absolute;
+  left: 1458.48px;
+  top: 2643.83px;
+  width: 510px;
+  height: 510px;
+}
+.sphere_circles {
+  width: 293px;
+  height: 292px;
+  position: absolute;
+  top: 3480px;
+  left: 1550px;
+}
+.path_lines {
+  position: absolute;
+  width: 2394px;
+  height: 1260px;
+  top: 2705.33px;
+  left: -239px;
+}
+.circle_17 {
+  width: 486.03px;
+  height: 489.33px;
+  left: 33.33px;
+  top: 2994.66px;
+}
+.circle_17_inside {
+  border-radius: 55%;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+.circle_17_pre_inside {
+  border-radius: 55%;
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+.circle_17 .circles_around {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  height: 360px;
+}
+.circle_17 .sphere_circles {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 293px;
+  height: 292px;
+}
+.empty_white_dot {
+  position: absolute;
+  background-color: transparent;
+  border-radius: 55%;
+  border: 4px solid #fff;
+}
+.star_of_circle_2 {
+  width: 529px;
+  height: 529px;
+  position: absolute;
+  left: 866.33px;
+  top: 3403.67px;
+}
+.circle_18 {
+  width: 126.67px;
+  height: 126.67px;
+  left: 669.33px;
+  top: 3601.33px;
+}
+.circle_18_inside {
+  border-radius: 55%;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.circle_19 {
+  width: 89.28px;
+  height: 89.88px;
+  left: 1361.33px;
+  top: 3872px;
+}
+.circle_19_inside {
+  border-radius: 55%;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.circle_20 {
+  width: 89.28px;
+  height: 89.88px;
+  left: 789.33px;
+  top: 4032px;
+}
+.circle_20_inside {
+  border-radius: 55%;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.circle_21 {
+  width: 126.67px;
+  height: 126.67px;
+
+  left: 1732px;
+  top: 4088px;
+}
+.circle_21_inside {
+  position: absolute;
+  width: 50%; /* Adjust size as needed */
+  height: 50%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_22 {
+  width: 176.85px;
+  height: 178.06px;
+
+  left: 1189.81px;
+  top: 4283.42px;
+}
+.circle_22_inside {
+  position: absolute;
+  width: 50%; /* Adjust size as needed */
+  height: 50%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle_23 {
+  width: 176.85px;
+  height: 178.06px;
+
+  left: 554.67px;
+  top: 4283.42px;
+}
+.circle_23_inside {
+  position: absolute;
+  width: 50%; /* Adjust size as needed */
+  height: 50%; /* Adjust size as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sphere_many_circles {
+  position: absolute;
+  width: 690px;
+  height: 690px;
+  left: -65px;
+  top: 3568.61px;
+}
+.line_one {
+  width: 922.67px;
+  left: 732px;
+  top: 4006px;
+}
+.line_two {
+  width: 844px;
+  left: 985.33px;
+  top: 4039.33px;
+}
+.line_three {
+  width: 813.34px;
+  left: 909.33px;
+  top: 4075.33px;
+}
+.line_one,
+.line_two,
+.line_three {
+  position: absolute;
+  border: 3px solid #fff;
+}
+.task_text {
+  text-align: center;
+  position: absolute;
+  left: 706.04px;
+  top: 4227.33px;
+  font-size: 52px;
+}
+.bottom_text {
+  position: absolute;
+  left: 40px;
+  top: 4583.33px;
+  width: 95%;
+}
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.text-white {
+  color: white;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: end;
+}
+.w-95p {
+  width: 95%;
+}
+.m-auto {
+  margin: auto;
+}
+.w-26p {
+  text-wrap: wrap;
+  width: 26%;
+}
+.w-fit {
+  width: fit-content;
+}
+.ml-15p {
+  margin-left: 15%;
+}
+.mr-5p {
+  margin-right: 5%;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Увеличение на 10% */
+  }
+  100% {
+    transform: scale(1); /* Возвращение к исходному размеру */
+  }
+}
