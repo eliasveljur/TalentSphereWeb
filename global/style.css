@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "UncialAntiqua";
+  src: url("../fonts/UncialAntiqua.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AlumniSans";
+  src: url("../fonts/AlumniSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexSans";
+  src: url("../fonts/IBMPlexSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "IBMPlexSans", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #0e444f;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 99px;
+  background-color: #b2d6dd;
+  padding: 0 30px;
+  z-index: 3;
+}
+.navbar .dropdown {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #0e444f;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s ease all;
+  padding: 30px 50px;
+
+  opacity: 1;
+  visibility: visible;
+
+  display: flex;
+  flex-direction: column;
+}
+.navbar .dropdown .x {
+  height: 60px;
+  width: fit-content;
+}
+.navbar .dropdown.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.navbar .dropdown .x {
+  cursor: pointer;
+}
+.navbar .dropdown .links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.navbar .dropdown .link {
+  text-align: center;
+}
+.navbar .dropdown .link a {
+  color: #b2d6dd;
+  text-decoration: none;
+  font-size: 100px;
+}
+.navbar .dropdown .link a:hover {
+  color: #cce7ec;
+}
+.navbar .burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  height: 44px;
+}
+.navbar .burger .line {
+  height: 5px;
+  background-color: #0e444f;
+  width: 100px;
+  position: relative;
+}
+.navbar .logo {
+  color: #0e444f;
+  font-size: 35px;
+  font-family: "UncialAntiqua", sans-serif;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 50px;
+  background-color: #0e444f;
+  position: relative;
+  z-index: 1;
+}
+.footer .left .top {
+  font-size: 20px;
+  color: #ffffff;
+}
+.footer .left .logo {
+  color: #b2d6dd;
+  font-size: 35px;
+  font-family: "UncialAntiqua", sans-serif;
+  margin: 20px 0;
+}
+.footer .right .contact {
+  font-weight: 500;
+  font-size: 40px;
+  color: #b2d6dd;
+  text-align: right;
+}
+.footer .right .text {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: right;
+
+  color: #ffffff;
+}
